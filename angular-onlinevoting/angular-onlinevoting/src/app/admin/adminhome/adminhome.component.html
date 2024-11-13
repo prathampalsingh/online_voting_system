@@ -1,1 +1,46 @@
 <div class="main"></div>
+<div class="dashboard-content">
+    <h1>Admin Dashboard</h1>
+  
+     
+  
+    <!-- <div (click)="gotourl('adminhome')" [class.selected]="url === '/adminhome'"> -->
+      <div>
+        <div class="stats">
+        <div class="stat-item">
+          <h3>No Of Users <mat-icon>people</mat-icon></h3>
+          <p>{{totalUsers}}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- <div (click)="gotourl('llistorder')" [class.selected]="url === '/llistorder'"> -->
+      <div>
+        <div class="stats">
+        <div class="stat-item">
+          <h3>Total Party <mat-icon>receipt_long</mat-icon></h3>
+          <p>{{totalParties}}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- <div (click)="gotourl('listreview')" [class.selected]="url === '/listreview'"> -->
+      <div>
+        <div class="stats">
+        <div class="stat-item">
+          <h3>Total voters <mat-icon>rate_review</mat-icon></h3>
+          <p>{{activeVoter}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div (click)="gotourl('listreview')" [class.selected]="url === '/listreview'"> -->
+    <div>
+        <div class="stats">
+        <div class="stat-item">
+          <h3>Voters Voted <mat-icon>rate_review</mat-icon></h3>
+          <p>{{totalVoted}}</p>
+        </div>
+      </div>
+    </div>
