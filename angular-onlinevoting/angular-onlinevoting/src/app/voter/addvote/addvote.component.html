@@ -1,0 +1,71 @@
+<div class="main">
+  <div class="user-info-voter">
+    <div class="u-info">
+      <table id="customers">
+        <tr>
+          <td colspan="2" class="uicon">
+            <mat-icon>account_circle</mat-icon>
+          </td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td>{{ user?.userName }}</td>
+        </tr>
+        <tr>
+          <td>User Email</td>
+          <td>{{ user?.userEmail }}</td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>{{ user?.userMobileNumber }}</td>
+          </tr>
+          <tr>
+            <td>Voter Number</td>
+            <td>{{ user?.userVotingCardNumber }}</td>
+          </tr>
+        <tr>
+          <td colspan="2" class="status">
+            {{ user?.status === null ? "Not Voted" : "Voted" }}
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div *ngIf="user && user?.status !== null" class="success">
+      You given your vote successfully
+    </div>
+    <div *ngIf="user && user?.status === null" class="party">
+      <!-- <div *ngFor="let party of allParty" class="all-party">
+        <div><img [src]="party?.partyLogo" /></div>
+        <div>
+          <input
+            type="radio"
+            class="radio-btn"
+            [name]="party?.partyName"
+            [value]="party?.partyId"
+            [(ngModel)]="selectedParty"
+          />
+          {{ party?.partyLeaderName }} ({{ party?.partyName }})
+        </div>
+        <br />
+      </div> -->
+      <table style="border-collapse: collapse; border: none;" class="party-table">
+        <tr *ngFor="let party of allParty" class="all-party">
+            <td><img [src]="party?.partyLogo" /></td>
+            <td><input
+                type="radio"
+                class="radio-btn"
+                [name]="party?.partyName"
+                [value]="party?.partyId"
+                [(ngModel)]="selectedParty"
+              />
+              {{ party?.partyLeaderName }} ({{ party?.partyName }})
+            </td>
+             
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><button (click)="submit()" id="btnn">Submit</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

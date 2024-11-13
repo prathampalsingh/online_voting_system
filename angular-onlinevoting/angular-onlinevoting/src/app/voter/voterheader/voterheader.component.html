@@ -1,0 +1,20 @@
+<!-- <div class="main">
+<div (click)="routeToLink('voteadd')">Add Vote</div>
+<div (click)="routeToLink('logout')">Logout</div>
+</div> -->
+
+
+<header class="header">
+    <div class="logo">
+        <img class="brand-logo" src="../../../assets/eci-logo.svg" alt="logo">
+    </div>
+    <div class="profile">
+        Welcome, &nbsp;&nbsp;<span class="uname">{{uName}}</span>
+    </div>
+    <nav class="nav-items">
+        <i class="fa fa-home" style="color: rgb(0, 0, 0);"></i>
+        <div class="head" (click)="routeToLink('voteadd')">Add Vote</div>
+        <i class="fa fa-sign-out" aria-hidden="true" style="color: black;"></i>
+        <div class="head" (click)="routeToLink('logout')">Logout</div>
+    </nav>
+</header>

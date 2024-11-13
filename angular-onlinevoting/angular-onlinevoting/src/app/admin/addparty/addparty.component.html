@@ -1,0 +1,15 @@
+<div class="bodyy">
+    <div class="form">
+        <h1>Add Party</h1>
+        <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="erroediv">
+            {{errorMessage}}
+        </div>
+        <div class="voterform">
+            <input type="text" placeholder="Party Name" [(ngModel)]="partyName">
+            <input type="text" placeholder="Party Logo" [(ngModel)]="partyLogo ">
+            <input type="text" placeholder="Party Leader Name" [(ngModel)]="partyLeaderName">
+            <button *ngIf="!isEdit" (click)="addParty()" class="btnn">Submit</button>
+            <button *ngIf="isEdit" (click)="updateParty()" class="btnn">Update</button>
+        </div>
+    </div>
+</div>

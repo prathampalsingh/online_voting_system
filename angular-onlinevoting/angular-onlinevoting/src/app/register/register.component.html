@@ -1,0 +1,29 @@
+<section class="sign_up">
+    <div class="container">
+        <h1>Register</h1>
+        <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="erroediv">
+            {{errorMessage}}
+        </div>
+        <p id="create">Create your account. It's free and only takes a minute</p>
+        <div class="details">
+            <input id="i1" type="text" placeholder="User Name" [(ngModel)]="userName">
+            <input id="i2" type="text" placeholder="Voting Number" [(ngModel)]="userVotingCardNumber">
+            <input id="i3" type="address" placeholder="Address" [(ngModel)]="userAddress">
+            <input id="i4" type="number" placeholder="Mobile Number" [(ngModel)]="userMobileNumber">
+            <input id="i5" type="email" placeholder="example@gmail.com" [(ngModel)]="userEmail">
+            <input id="i6" type="password" placeholder="Password" [(ngModel)]="userPassword">
+            <!-- <input id="i7" type="date" placeholder="Birthdate" [(ngModel)]="userDateOfBirth"> -->
+            <input id="i8" type="date" placeholder="Birthdate" max={{maxDate}} required [(ngModel)]="userDateOfBirth" />
+        </div>
+        <div>
+            <input id="i9" type="radio" [(ngModel)]="userGender" value="female"> Female &nbsp;
+            <input type="radio" [(ngModel)]="userGender" name="Gender" value="male"> Male
+        </div>
+        <div class="checkbox">
+            <label> <input type="checkbox" id="terms"> I Agree terms & condition </label>
+        </div>
+        <div class="btn">
+            <button id="register_btn" (click)="registerUser()">Register Now</button>
+        </div>
+    </div>
+</section>

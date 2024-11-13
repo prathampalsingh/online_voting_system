@@ -1,0 +1,24 @@
+<div class="main">
+    <h1>Election Result</h1>
+    <div class="left-panel">
+        <table border="1" class="table">
+            <tr class="header">
+                <th>Party Logo</th>
+                <th>Party & Candidate</th>
+                <th>Vote</th>
+            </tr>
+            <tr *ngFor="let party of allParty">
+                <td>
+                    <img [src]="party?.partyLogo">
+                </td>
+                <td>
+                    {{party?.partyLeaderName}} ({{party?.partyName}})
+                </td>
+                <td>{{party?.votes}}</td>
+            </tr>
+        </table>
+        <div *ngIf="allParty && allParty.length > 1" class="party-name">
+            Win party:  <span>{{winingParty?.partyName}}</span>
+        </div>
+    </div>
+</div>

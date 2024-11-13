@@ -1,0 +1,120 @@
+
+.bodyy{
+    background-image: url(../../assets/reg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 92vh;
+    width: 100%;
+    margin-top: 20px;
+}
+.form {
+    width: 280px;
+    height: 410px;
+    background-color: rgba(71, 70, 70, 0.3);
+    position: absolute;
+    top: 85px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+    background-color: rgb(224, 220, 212);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 8px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.radiobtn{
+display: flex;
+align-items: center;
+font-size: 25px;
+padding-left: 20px;
+color: white;
+}
+.radiobtn input[type="radio"] {
+    transform: scale(0.6); 
+    margin-right: 5px; 
+    vertical-align: middle;
+    position: relative;
+    top: -10px; 
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(31, 29, 29);
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.btnn:hover {
+    background: white;
+    color: orange;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+span.blue-area {
+    color: blue;
+    cursor: pointer;
+}
+
+.form .error{
+color: red;
+    font-weight: bold;
+    font-size: 15px;
+text-align: center;
+}
+
+.forgotpassword {
+    margin-top: 15px;
+    /* margin-left: 18px; */
+    font-size: 21px;
+    color: aliceblue;
+    cursor: pointer;
+    text-align: left;
+}

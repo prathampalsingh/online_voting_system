@@ -1,0 +1,29 @@
+<div class="bodyy">
+    <div class="form">
+        <h2 class="h2item">Login Here</h2>
+        <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="erroediv">
+            {{errorMessage}}
+        </div>
+        <div class="radiobtn">
+            Voter <input type="radio" value="voter" name="voter" [(ngModel)]="loginType" (click)="clearMessage()" />
+            Admin <input type="radio" value="admin" name="admin" [(ngModel)]="loginType" (click)="clearMessage()" />
+        </div>
+        <div *ngIf="loginType === 'voter'">
+            <div class="voterform">
+                <input type="text" placeholder="Enter Voting Number" [(ngModel)]="voterCardNumber">
+                <input type="Password" placeholder="Enter Password" [(ngModel)]="password">
+                <button class="btnn" (click)="login()"> Login</button>
+            </div>
+        </div>
+        <div *ngIf="loginType === 'admin'">
+            <div class="adminform">
+                <input type="email" name="email" placeholder="Enter Your Mail Id" [(ngModel)]="email">
+                <input type="Password" name="" placeholder="Enter Your Password" [(ngModel)]="password">
+                <button class="btnn" (click)="login()"> Login</button>
+            </div>
+        </div>
+        <div class="forgotpassword" (click)="openForgotPassword()">
+            Forgot Password ?
+        </div>
+    </div>
+</div>

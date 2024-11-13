@@ -1,0 +1,82 @@
+/* .main
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(72, 16, 85);
+    font-size: 20px;
+    text-decoration-color: rgb(72, 16, 85);
+    font-weight: bolder;
+    gap: 2rem;
+    padding-right: 20px;
+}
+
+.main img {
+    height: 3em;
+    width: 200px;
+}
+.main div
+{
+    cursor: pointer;
+}
+.brand-logo{
+    width: 100px;
+    height: 80px;
+    transform: rotate(311deg); 
+    border-radius: 20%;
+    padding-top: 40px;
+  } */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 35px;
+}
+
+.brand-logo {
+    width: 230px;
+    height: 100px;
+    /* transform: rotate(311deg); */
+    border-radius: 20%;
+    /* padding-top: 40px; */
+    padding-left: 20px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 35px;
+}
+
+.head {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    padding-right: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.head:hover {
+    color: orange;
+}
+.profile {
+   font-size: 20px;
+   font-weight: bold;
+ }
+ .profile .mat-icon {
+     height: 64px;
+     width: 64px;
+     font-size: 64px;
+ }
+ 
+ .profile .uname {
+     margin-top: 20px;
+ }
+ 

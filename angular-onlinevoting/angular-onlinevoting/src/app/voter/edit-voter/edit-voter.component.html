@@ -1,0 +1,12 @@
+
+<div class="body">
+    <div class="form">
+        <h2>Edit Voter</h2>
+        <div class="details">
+            <input id="i1" type="text"  [(ngModel)]="username">
+            <input id="i2" type="text"  [(ngModel)]="address">
+            <input id="i3" type="number"  [(ngModel)]="mobile">
+            <input id="i4" type="text"  [(ngModel)]="email">
+            <input id="i5" type="date"  [(ngModel)]="dateofbirth">
+            <button (click)="onUpdate()" class="register_btn">Submit</button>
+        </div>

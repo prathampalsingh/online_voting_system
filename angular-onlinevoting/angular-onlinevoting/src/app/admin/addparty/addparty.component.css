@@ -1,0 +1,91 @@
+.bodyy {
+  background-image: url(../../../assets/addv.jpg);
+  width: 100%;
+  height: 89vh;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;margin-top: 5px;
+}
+
+.form {
+  width: 270px;
+  height: 410px;
+  background-color: rgba(80, 77, 77, 0.3);
+  position: absolute;
+  top: 75px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 750px;
+}
+
+.form h1 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(248, 245, 243);
+  font-size: 27px;
+font-weight: bolder;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 8px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid rgb(222, 212, 212);
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(239, 235, 235);
+  font-family: Arial;
+  font-weight: bolder;
+}
+
+.btnn {
+  width: 240px;
+  height: 40px;
+  background:#04AA6D;
+  border: none;
+  margin-top: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(243, 243, 243);
+  transition: 0.4s ease;
+  margin-left: 15px;
+}
+
+.btnn:hover {
+  /* background: white;
+  color: orange; */
+  background-color: #3e8e41
+}
+
+.btnn a {
+  text-decoration: none;
+  color: rgb(22, 21, 21);
+  font-weight: bold;
+}
+.error{
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+  /* padding-left: 30px; */
+  text-align: center;
+}

@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign_up{ 
+    background-image: url(../../assets/reg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 92vh;
+    width: 100%;
+    margin-top: 20px;
+}
+#i9{
+    text-align: center;
+}
+.container{
+    background-color: rgba(71, 70, 70, 0.3);
+    width: 320px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 15px;
+    margin-right: 750px;
+    border-radius: 15px;
+}
+
+h1{
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+    margin-top: -40px;
+}
+#create{
+    font-size: 12px;
+    color: rgb(1, 1, 1);
+    padding-top: 8px;
+}
+#i1,#i2, #i3, #i4, #i5, #i6,#i7,#i8, #i9{
+    border-radius: 10px ;
+    border:1px solid rgb(185, 137, 120);
+}
+
+input{
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background: transparent;
+    color: rgb(249, 244, 244);
+    font-weight: bolder;
+}
+::placeholder
+{
+    color: rgb(222, 210, 210);
+    font-weight: bold;
+}
+.details input{
+   width: 300px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+
+.signin{
+    display: block;
+    color: rgb(226, 211, 211);
+    position: absolute;
+    padding-top: 310px;
+}
+
+.signIn p span a{
+    color: rgb(231, 59, 208);
+    margin-left: 6px;
+}
+
+.checkbox{
+    width: 355px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#register_btn{
+    text-decoration: none;
+
+    /* padding: 7px 100px; */
+    padding: 5px 70px;
+    border: 1px solid green;
+    background: rgb(255, 255, 255);
+    color: rgb(94, 24, 24);
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#register_btn:hover{
+    background:orange;
+    color: rgb(81, 27, 27);
+    border: 1px solid black;
+    transition: .3s;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}

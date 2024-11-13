@@ -1,0 +1,51 @@
+img {
+    width: 229px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main {
+    background-image: url(../../../assets/voterlist.avif);
+    width: 100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -15px;
+
+}
+.header{
+    background-color: rgb(221, 148, 39);
+}
+
+.main h1 {
+    /* padding-left: 550px;
+    padding-top: 20px; */
+text-align: center;
+}
+.left-panel .table{
+    
+    border: none;
+    border-collapse: collapse;
+    border-color: black;
+}
+.left-panel{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.table th,
+.table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.party-name {
+    font-weight: bold;
+    margin-left: 12%;
+    margin-top: 24px;
+    font-size: 35px;
+}
+.party-name span{
+    font-size: 45px;
+    color: brown;
+}

@@ -1,0 +1,23 @@
+
+  .textleft{
+    color: orangered;
+    /* margin-left: 500px; */
+    text-align: center;
+  }
+  img{
+    width: 800px;
+    height: 350px;
+  }
+  .text{
+    color: blue;
+    
+  }
+  .text1{
+    color: green;
+  }
+  .mission{
+    margin-top: -20px;
+  }
+  .vision{
+    margin-top: -40px;
+  }

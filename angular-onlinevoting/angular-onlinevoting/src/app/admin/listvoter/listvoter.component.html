@@ -1,0 +1,46 @@
+<div class="main-content">
+  <h1>List Of Voters</h1>
+  <div class="left-panel">
+    <table border="1" class="table">
+      <thead>
+        <tr class="header">
+          <!--<th>ID</th>-->
+          <th>Username</th>
+          <th>Gender</th>
+          <th>Date of Birth</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Mobile No</th>
+          <th>Voting No</th>
+          <th>Account Status</th>
+          <th colspan="2">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let voter of allVoters">
+          <!--<td>{{ voter?.userId }}</td>-->
+          <td>{{ voter?.userName }}</td>
+          <td>{{voter?.userGender}}</td>
+          <td>{{voter?.userDateOfBirth}}</td>
+          <td>{{voter?.userEmail}}</td>
+          <td>{{voter?.userAddress}}</td>
+          <td>{{voter?.userMobileNumber}}</td>
+          <td>{{voter?.userVotingCardNumber}}</td>
+          <td>
+            <span *ngIf="voter?.activateAccount === true">Active</span>
+            <span *ngIf="voter?.activateAccount === false">
+              <button (click)="activateUser(voter)">Not Active</button>
+            </span>
+          </td>
+          <td><button (click)="deleteUser(voter?.userId)"><i class="fa fa-trash"
+                aria-hidden="true"></i>&nbsp;Delete</button></td>
+
+          <td><button (click)="updateUser(voter?.userId)"><i class="fa fa-pencil"
+                aria-hidden="true"></i>&nbsp;Update</button></td>
+          <!-- <td><button (click)="getAccountDetail(voter?.userId)"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;Detail</button></td> -->
+        </tr>
+      </tbody>
+    </table>
+    <div *ngIf="allVoters.length === 0">There is no any account currently</div>
+  </div>
+</div>

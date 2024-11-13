@@ -1,0 +1,89 @@
+.body {
+    background-image: url(../../assets/../../assets/flagimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+.form {
+    width: 270px;
+    height: 410px;
+    background-color: rgba(211, 202, 202, 0.3);
+    position: absolute;
+    top: 75px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 500px;
+}
+
+.form h2 {
+    font-family: sans-serif;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 8px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.form input {
+    width: 220px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid orange;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#i1,
+#i2,
+#i3,
+#i4,
+#i5,
+#i6 {
+    border-radius: 10px;
+    border: 1px solid rgb(185, 137, 120);
+}
+
+input {
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background: transparent;
+    width: 240px;
+}
+
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.register_btn {
+    text-decoration: none;
+    width: 260px;
+    height: 40px;
+    border: 1px solid green;
+    background: rgb(255, 255, 255);
+    color: rgb(29, 161, 51);
+    border-radius: 8px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+#register_btn:hover {
+    background: orangered;
+    color: black;
+    border: 1px solid black;
+    transition: .3s;
+}
