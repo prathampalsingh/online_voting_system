@@ -8,6 +8,18 @@
     margin-top: -15px;
     
 }
+.search-text{
+    text-align: center;
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 .header{
     background-color: rgb(14, 86, 95);
 }

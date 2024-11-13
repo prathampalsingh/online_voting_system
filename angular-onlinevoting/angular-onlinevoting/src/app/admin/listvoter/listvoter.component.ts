@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { take } from 'rxjs';
+import { debounceTime, Subject, take } from 'rxjs';
 import { VoterService } from 'src/app/voter.service';
 
 @Component({
@@ -9,22 +9,39 @@ import { VoterService } from 'src/app/voter.service';
   styleUrls: ['./listvoter.component.css']
 })
 export class ListvoterComponent {
-
   allVoters: any[] = [];
+  sText: string = '';
+  searchSubject = new Subject();
+  backupVoters: any[] = [];
+
   constructor(
     private service: VoterService,
-    private router:Router
+    private router: Router
   ) {
     this.getAllVoter();
+    this.searchSubject.pipe(debounceTime(1000)).subscribe((val: any) => {
+      console.log(">>>>>>>>", val);
+      this.allVoters = this.backupVoters.filter((item: any) => item?.userName.includes(val))
+      console.log("%%%%%%", this.allVoters);
+    })
+  }
+
+
+  searchText(ev: any): void {
+    console.log("***", ev.target.value);
+    this.searchSubject.next(this.sText)
+
+
   }
 
   getAllVoter(): void {
     this.service.getAllVoterList().pipe(take(1)).subscribe((res: any) => {
+
       this.allVoters = res.filter((item: any) => item?.userRole !== 'admin');
       console.log('>>>>>>', res);
+      this.backupVoters = this.allVoters;
     });
   }
-
   deleteUser(userId: number) {
     this.service.deleteUser(userId).subscribe(
       () => {

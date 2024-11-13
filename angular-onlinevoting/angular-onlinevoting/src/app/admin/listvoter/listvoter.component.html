@@ -1,5 +1,8 @@
 <div class="main-content">
   <h1>List Of Voters</h1>
+  <div class="search-text">
+    <input type="text" (keyup)="searchText($event)" [(ngModel)]="sText" placeholder="Search text">
+  </div>
   <div class="left-panel">
     <table border="1" class="table">
       <thead>
