@@ -18,16 +18,19 @@ public class Party {
     private Long partyId;
 
     @NotNull(message = "Please Give Unique Party Name")
-    @Column(name="PartyName", unique=true)
+    @Column(name="PartyName", length = 30)
     private String partyName;
     
     @NotNull(message = "Please Insert Party Logo")
-    @Column(name="PartyLogo", unique=true)
+    @Column(name="PartyLogo")
     private String partyLogo;
     
     private String partyLeaderName;
-    
+    @NotNull(message = "Please Give Unique Party Name")
+    @Column(name="PartyName", length = 30)
+    private String Constituency;
     private int votes;
+    //hello
 
 	public Long getPartyId() {
 		return partyId;
