@@ -108,8 +108,8 @@ export class RegisterComponent {
         userPassword: this.userPassword,
         userDateOfBirth: this.userDateOfBirth,
         userGender: this.userGender,
-      //userRole: 'admin'
-       userRole: 'voter'
+     // userRole: 'admin'
+        userRole: 'voter'
       };
 
       console.log('>>>>>', body);
