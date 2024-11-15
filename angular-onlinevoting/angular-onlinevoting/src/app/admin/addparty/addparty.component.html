@@ -8,8 +8,8 @@
             <input type="text" placeholder="Party Name" [(ngModel)]="partyName">
             <input type="text" placeholder="Party Logo" [(ngModel)]="partyLogo ">
             <input type="text" placeholder="constituency" [(ngModel)]="constituency">
-            <input type="text" placeholder="canImage" [(ngModel)]="canImage">
             <input type="text" placeholder="Party Leader Name" [(ngModel)]="partyLeaderName">
+            <input type="text" placeholder="canImage" [(ngModel)]="canImage">
             <button *ngIf="!isEdit" (click)="addParty()" class="btnn">Submit</button>
             <button *ngIf="isEdit" (click)="updateParty()" class="btnn">Update</button>
         </div>

@@ -6,6 +6,8 @@
                 <th>Party Logo</th>
                 <th>Party Name</th>
                 <th>Party Candidate</th>
+                <th>Constituency</th>
+                <th>Candidate Image</th>
                 <th>Operation</th>
             </tr>
             <tr *ngFor="let party of allParty">
@@ -17,6 +19,12 @@
                 </td>
                 <td>
                     {{party?.partyLeaderName}}
+                </td>
+                <td>
+                    {{party?.constituency}}
+                </td>
+                <td>
+                    <img [src]="party?.canImage">
                 </td>
                 <td>
                     <button (click)="onEdit(party)"><i class="fa fa-trash"

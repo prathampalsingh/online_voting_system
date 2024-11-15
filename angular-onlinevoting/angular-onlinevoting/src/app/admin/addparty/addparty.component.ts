@@ -12,9 +12,9 @@ export class AddpartyComponent {
   errorMessage: string = '';
   partyName: string = '';
   partyLogo: string = '';
-  constituency: string = '';
-  canImage: string = '';
   partyLeaderName: string = '';
+  constituency: string='';
+  canImage: string ='';
   partyId: any = '';
   isEdit: boolean = false;
   constructor(
@@ -40,6 +40,8 @@ export class AddpartyComponent {
         this.partyId = res?.partyId;
         this.partyLogo = res?.partyLogo;
         this.partyName = res?.partyName;
+        this.constituency = res?.constituency;
+        this.canImage = res?.canImage
       }
     });
   }
@@ -61,16 +63,30 @@ export class AddpartyComponent {
       document.getElementById('errordiv')?.scrollIntoView(true);
       return;
     }
-
+    if (this.constituency === '') {
+      this.errorMessage = 'Constituency Name should not be blank';
+      document.getElementById('errordiv')?.scrollIntoView(true);
+      return;
+    }
+    if (this.canImage === '') {
+      this.errorMessage = 'Candidate Image should not be blank';
+      document.getElementById('errordiv')?.scrollIntoView(true);
+      return;
+    }
+    
     const body: any = {
       partyName: this.partyName,
       partyLogo: this.partyLogo,
       partyLeaderName: this.partyLeaderName,
+      constituency: this.constituency,
+      canImage: this.canImage,
       votes: 0
     };
 
     this.service.addParty(body).pipe(take(1)).subscribe((res: any) => {
       console.log('>>>>>>>>>>>>>>>>', res);
+      console.log('$$$$$$$$$$', body);
+      
       if (res && res === 'Party added successfully') {
         alert('Party Added successfully');
         this.service.navigateToLink('adminlistparty');

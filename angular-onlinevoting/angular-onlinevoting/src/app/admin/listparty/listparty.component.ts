@@ -23,6 +23,7 @@ export class ListpartyComponent {
         console.log('>>>>##>>', res);
         this.allParty = res;
       }
+      console.log("!!!",this.allParty);
     });
   }
   onDelete(party: any) : void {
