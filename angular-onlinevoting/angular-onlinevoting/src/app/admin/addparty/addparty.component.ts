@@ -12,6 +12,8 @@ export class AddpartyComponent {
   errorMessage: string = '';
   partyName: string = '';
   partyLogo: string = '';
+  constituency: string = '';
+  canImage: string = '';
   partyLeaderName: string = '';
   partyId: any = '';
   isEdit: boolean = false;
