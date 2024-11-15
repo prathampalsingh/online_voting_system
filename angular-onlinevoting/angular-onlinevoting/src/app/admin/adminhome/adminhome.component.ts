@@ -17,20 +17,16 @@ export class AdminhomeComponent {
   }
 
   ngOnInit(): void {
+    const role=localStorage.getItem('role');
     this.vservice.getAllVoterList().pipe(take(1)).subscribe((res) => {
-      console.log("***", res);
+      console.log("*******", res,localStorage);
       if (res && Array.isArray(res)){
-        this.totalUsers=res.length;
-        this.activeVoter=res.filter((item:any)=>item?.activateAccount===true).length;
+        
+        this.totalUsers=res.filter((item:any)=>item?.userRole!==role).length;
+
+        this.activeVoter=res.filter((item:any)=>item?.activateAccount===true && item?.userRole!==role).length;
         this.totalVoted=res.filter((item:any)=>item?.status==='voted').length;
       }
    });
-   this.vservice.getAllParty().pipe(take(1)).subscribe((res) => {
-    console.log("***", res);
-    if (res && Array.isArray(res)){
-           this.totalParties=res.length;
-    }
-  });
-  }
 }
-
+}
