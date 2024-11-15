@@ -29,7 +29,8 @@ img {
     border: none;
     border-collapse: collapse;
     border-color: black;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .left-panel {

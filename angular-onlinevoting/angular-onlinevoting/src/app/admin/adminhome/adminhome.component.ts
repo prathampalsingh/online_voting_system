@@ -30,4 +30,3 @@ export class AdminhomeComponent {
    });
 }
 }
-// hello

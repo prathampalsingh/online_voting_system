@@ -44,6 +44,9 @@
         </tr>
       </tbody>
     </table>
-    <div *ngIf="allVoters.length === 0">There is no any account currently</div>
+    <div *ngIf="allVoters.length === 0" style="text-align: center;" [ngStyle]="{'color': allVoters.length === 0 ? 'red' : 'black',
+    'font-weight': allVoters.length === 0 ? 'bold' : 'normal'}">
+There is no any account currently
+</div>
   </div>
 </div>

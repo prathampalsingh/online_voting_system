@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    background-attachment: fixed;
     margin-top: -15px;
     
 }
@@ -32,6 +33,8 @@ input[type=text] {
     border: none;
     border-collapse: collapse;
     border-color: rgb(6, 6, 6);
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-content h1 {
     /* padding-left: 550px;

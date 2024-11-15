@@ -5,6 +5,8 @@
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;margin-top: 5px;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
 }
 
 .form {
@@ -22,7 +24,7 @@
   width: 220px;
   font-family: sans-serif;
   text-align: center;
-  color: rgb(248, 245, 243);
+  color: black;
   font-size: 27px;
 font-weight: bolder;
   border-radius: 10px;
@@ -38,7 +40,7 @@ font-weight: bolder;
   background: transparent;
   border: 1px solid rgb(222, 212, 212);
   border-radius: 10px;
-  color: white;
+  color: black;
   font-size: 15px;
   letter-spacing: 1px;
   margin-top: 30px;
@@ -52,7 +54,7 @@ font-weight: bolder;
 }
 
 ::placeholder {
-  color: rgb(239, 235, 235);
+  color: black;
   font-family: Arial;
   font-weight: bolder;
 }

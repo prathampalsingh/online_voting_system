@@ -28,6 +28,8 @@ text-align: center;
     border: none;
     border-collapse: collapse;
     border-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 .left-panel{
     padding-left: 150px;
