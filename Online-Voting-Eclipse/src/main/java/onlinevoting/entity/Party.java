@@ -26,9 +26,13 @@ public class Party {
     private String partyLogo;
     
     private String partyLeaderName;
-    @NotNull(message = "Please Give Unique Party Name")
-    @Column(name="PartyName", length = 30)
-    private String Constituency;
+    @NotNull(message = "Please Give Constituency Name")
+    @Column(name="constituency", length = 30)
+    private String constituency;
+    
+    @NotNull(message = "Please Insert candidate picture")
+    @Column(name="candidate picture")
+    private String canImage;
     private int votes;
     //hello
 
@@ -70,6 +74,22 @@ public class Party {
 
 	public void setVotes(int votes) {
 		this.votes = votes;
+	}
+
+	public String getConstituency() {
+		return constituency;
+	}
+
+	public void setConstituency(String constituency) {
+		this.constituency = constituency;
+	}
+
+	public String getCanImage() {
+		return canImage;
+	}
+
+	public void setCanImage(String canImage) {
+		this.canImage = canImage;
 	}
     
 
