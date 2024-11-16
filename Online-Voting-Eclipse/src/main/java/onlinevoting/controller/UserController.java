@@ -51,7 +51,7 @@ public class UserController {
 		userService.registerUser(user);
 		return ResponseEntity.ok("User Registered Successfully");
 	}
-
+	
 	@DeleteMapping("/deleteuser/{id}")
 	public ResponseEntity<Boolean> deleteUser(@PathVariable("id") long userId) {
 		userService.deleteByUserId(userId);
