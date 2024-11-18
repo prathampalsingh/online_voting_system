@@ -39,7 +39,7 @@ CREATE TABLE `user` (
   UNIQUE KEY `UK_lt2b8ocin3hdnm9q6fm4o8xnr` (`mobile_number`),
   UNIQUE KEY `UK_gr8n1eyxvl5m9hmbsv2yrfsi7` (`voting_card_number`),
   UNIQUE KEY `UK_9cigsktyi1h7lfjwqehc1d9va` (`emailid`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -48,7 +48,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,_binary '',NULL,'malad west','2006-11-09','pratham@gmail.com','male','7738821513','prathampal','P@ldk123','voter','9876543210'),(2,_binary '',NULL,'mumbai','2000-01-01','admin@gmail.com','male','9998887776','admin','Admin@111','admin','9998887776');
+INSERT INTO `user` VALUES (1,_binary '',NULL,'Mumbai','2001-01-01','admin@gmail.com','male','9876543210','admin','Admin@123','admin','1234567890'),(2,_binary '',NULL,'Kurla','2000-09-14','altamashshkh200@gmail.com','male','7451298455','Altamash Shaikh','Altshkh@200','voter','1251002579'),(3,_binary '',NULL,'Chembur','2001-07-15','karankotsaad421@gmail.com','male','7268412980','Saad Karankot','Patty@123','voter','1242006478'),(4,_binary '','voted','Govandi','1999-07-27','khasamad_69@gmail.com','male','7251897230','Samad Khatri','Khansahabolte97','voter','1251101123'),(5,_binary '','voted','Mumbai','2002-01-01','abhkgorpade21@gmail.com','male','7169872016','Abhishek Ghorpade','Gpatohde@123','voter','1252006657'),(6,_binary '',NULL,'Grant Road','2003-06-18','faizan200@gmail.com','male','7106984521','Ansari Faizan','Jelly@123','voter','1263412247'),(7,_binary '',NULL,'Navi Mumbai','2000-09-11','patilharshada@gmail.com','male','7977658712','Harshada Patil','Maipari@441','voter','1387411011'),(8,_binary '',NULL,'Andheri','2002-08-01','agrimapari4200@gmail.com','male','7955662410','Agrima Rawale','Harshu$123','voter','1569415589'),(9,_binary '',NULL,'Bandra','2001-06-21','nikharje@gmail.com','male','7587321668','Raj Nikharje','Saima$nahi65','voter','1644213211'),(10,_binary '',NULL,'Virar','2000-02-22','khanamaan741@gmail.com','male','7854621830','Amaan Khan','Beingsalman@69','voter','1003214120'),(11,_binary '',NULL,'Thane','2002-02-23','amaanansari31@gmail.com','male','8080465721','Ansari Amaan','Tiktok$619','voter','2478913972'),(12,_binary '',NULL,'Wadala','2001-09-24','khan.sady1@gmail.com','male','9821365470','Saad Khan','Pakitmaar@31','voter','2697435544'),(13,_binary '',NULL,'Kalyan','2003-04-25','kunchalsej@gmail.com','female','9478742369','Sejal Kunchal ','Sejalkunchal@123','voter','2483116197'),(14,_binary '',NULL,'Navi Mumbai','2000-03-16','abubhaijaan69@gmail.com','male','8588416325','Afsar Shaikh','Abuinsha@31','voter','1889941235'),(15,_binary '',NULL,'Mumbai','2000-03-15','bhosvarun44@gmail.com','male','8846512783','Varun Bhosle','Bhovarun$your1','voter','2247965531'),(16,_binary '',NULL,'Thane','2000-09-28','artsmarty@gmail.com','male','9664217832','Adnan Shaikh','Artysmarty@26','voter','2657748821'),(17,_binary '',NULL,'Thane','2002-01-26','koliparthsuper@gmail.com','male','9022647587','Parth Koli','Kpsuper@321','voter','2938840010'),(18,_binary '',NULL,'Dadar','2002-10-26','patelshinuviper@gmail.com','male','7977488598','Shinu Patel','Cosmosviper$21','voter','2546210135');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -61,4 +61,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-11-12 23:40:20
+-- Dump completed on 2024-11-18 11:21:39
