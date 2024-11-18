@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, numberAttribute } from '@angular/core';
 import { VoterService } from '../voter.service';
 import { take } from 'rxjs';
 import { Router } from '@angular/router';
@@ -31,12 +31,12 @@ export class RegisterComponent {
      }
     registerUser(): any {
       if (this.userName === '') {
-        this.errorMessage = 'First name should not be blank';
+        this.errorMessage = 'UserName should not be blank';
         document.getElementById('errordiv')?.scrollIntoView(true);
         return;
       }
       if (this.userName.length < 4) {
-        this.errorMessage = 'First name should be more than 3 chracter';
+        this.errorMessage = 'UserName should be more than 3 chracter';
         document.getElementById('errordiv')?.scrollIntoView(true);
         return;
       }
