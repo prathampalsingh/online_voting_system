@@ -108,7 +108,7 @@ export class RegisterComponent {
         userPassword: this.userPassword,
         userDateOfBirth: this.userDateOfBirth,
         userGender: this.userGender,
-     // userRole: 'admin'
+        // userRole: 'admin'
         userRole: 'voter'
       };
 

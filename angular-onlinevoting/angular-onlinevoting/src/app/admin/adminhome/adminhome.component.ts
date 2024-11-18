@@ -28,5 +28,11 @@ export class AdminhomeComponent {
         this.totalVoted=res.filter((item:any)=>item?.status==='voted').length;
       }
    });
+   this.vservice.getAllParty().pipe(take(1)).subscribe((res) => {
+    console.log("*******", res);
+    if (res && Array.isArray(res)){
+           this.totalParties=res.length;
+    }
+  });
 }
 }
