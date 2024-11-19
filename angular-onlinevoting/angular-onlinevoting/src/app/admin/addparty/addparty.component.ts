@@ -53,6 +53,12 @@ export class AddpartyComponent {
       document.getElementById('errordiv')?.scrollIntoView(true);
       return;
     }
+    const partyPartten = (/[A-Za-z]+$/)
+      if (!partyPartten.test(this.partyName)) {
+        this.errorMessage = 'Party Name Can not be Number';
+        document.getElementById('errordiv')?.scrollIntoView(true);
+        return;
+      }
     if (this.partyLogo === '') {
       this.errorMessage = 'Party Logo should not be blank';
       document.getElementById('errordiv')?.scrollIntoView(true);
@@ -63,8 +69,18 @@ export class AddpartyComponent {
       document.getElementById('errordiv')?.scrollIntoView(true);
       return;
     }
+    if (!partyPartten.test(this.partyLeaderName)) {
+      this.errorMessage = 'Party leader name can not be Number';
+      document.getElementById('errordiv')?.scrollIntoView(true);
+      return;
+    }
     if (this.constituency === '') {
       this.errorMessage = 'Constituency Name should not be blank';
+      document.getElementById('errordiv')?.scrollIntoView(true);
+      return;
+    }
+    if (!partyPartten.test(this.constituency)) {
+      this.errorMessage = 'Constituency can not be Number';
       document.getElementById('errordiv')?.scrollIntoView(true);
       return;
     }

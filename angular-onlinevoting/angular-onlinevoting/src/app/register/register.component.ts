@@ -69,8 +69,14 @@ export class RegisterComponent {
         document.getElementById('errordiv')?.scrollIntoView(true);
         return;
       }
+      const addressPartten = /^[a-zA-Z0-9\s,.'-]{3,}$/ ;
+      if (!addressPartten.test(this.userAddress)) {
+        this.errorMessage = 'Address should contain number and character';
+        document.getElementById('errordiv')?.scrollIntoView(true);
+        return;
+      }
       if (this.userMobileNumber === '') {
-        this.errorMessage = 'Mo no name should not be blank';
+        this.errorMessage = 'Mobile Number name should not be blank';
         document.getElementById('errordiv')?.scrollIntoView(true);
         return;
       }
