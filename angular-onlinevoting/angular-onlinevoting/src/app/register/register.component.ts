@@ -40,6 +40,12 @@ export class RegisterComponent {
         document.getElementById('errordiv')?.scrollIntoView(true);
         return;
       }
+      const userPartten = (/[A-Za-z]+$/)
+      if (!userPartten.test(this.userName)) {
+        this.errorMessage = 'UserName should Can not be Number';
+        document.getElementById('errordiv')?.scrollIntoView(true);
+        return;
+      }
 
       if (this.userVotingCardNumber === '') {
         this.errorMessage = 'Voting Number should not be blank';
