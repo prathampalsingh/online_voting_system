@@ -29,24 +29,24 @@ If user voted
 ![voted](https://github.com/user-attachments/assets/3eca57df-d00c-4708-aa3d-8ca06b0fd6d2)
 
 Steps to run:-
-install nodejs (https://nodejs.org/en/download/prebuilt-installer)
-on vscode run open new terminal and type
+1.install nodejs (https://nodejs.org/en/download/prebuilt-installer)
+2.on vscode run open new terminal and type
 
 npm install -g @angular/cli
 npm install
 
-on eclipse ide
-help > eclipse marketplace
-install spring tool v4
-install devtools
+3.on eclipse ide
+4.help > eclipse marketplace
+5.install spring tool v4
+6.install devtools
 
-on mysql terminal crearte a database 
+7.on mysql terminal crearte a database 
 **create database db521;**
 
-com.spring > application 
-run as spring
+8.com.spring > application 
+9.run as spring
 
-on vscode
+10.on vscode
 npm start
 
 on your browser
