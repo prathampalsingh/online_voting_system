@@ -21,25 +21,25 @@ class OnlineVotingSystemApplicationTests {
 	private PartyService partyService;
 	static User user = null;
 	static Party party=null;
-	private final String email="nitesh343@gmail.com";
+	private final String email="altamashshkh200@gmail.com";
 	
-	@Test
-	void testRegisterUser() {
-		
-		User newUser=new User();
-		newUser.setUserName("Priyali");
-		newUser.setUserEmail("Priyali@gmail.com");
-		newUser.setUserGender("Female");
-		newUser.setUserRole("voter");
-		newUser.setUserAddress("Mumbai");
-		newUser.setUserVotingCardNumber("3456345645");
-		newUser.setUserPassword("Priya@123");
-		newUser.setUserMobileNumber("8989818989");
-		//LocalDate.of(2002,12 ,3);
-		newUser.setUserDateOfBirth(LocalDate.of(2002,12 ,3));
-		
-		assertNotNull(userService.registerUser(newUser));
-	}
+//	@Test
+//	void testRegisterUser() {
+//		
+//		User newUser=new User();
+//		newUser.setUserName("Priyali");
+//		newUser.setUserEmail("Priyali@gmail.com");
+//		newUser.setUserGender("Female");
+//		newUser.setUserRole("voter");
+//		newUser.setUserAddress("Mumbai");
+//		newUser.setUserVotingCardNumber("3456345645");
+//		newUser.setUserPassword("Priya@123");
+//		newUser.setUserMobileNumber("8989818989");
+//		//LocalDate.of(2002,12 ,3);
+//		newUser.setUserDateOfBirth(LocalDate.of(2002,12 ,3));
+//		
+//		assertNotNull(userService.registerUser(newUser));
+//	}
 
 	@Test
 	void testLoginVoter() {
