@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { take } from 'rxjs';
 //import { take } from 'rxjs';
 import { VoterService } from 'src/app/voter.service';
+import { Chart, registerables } from 'chart.js';
 
 @Component({
   selector: 'app-result',
@@ -11,16 +12,45 @@ import { VoterService } from 'src/app/voter.service';
 export class ResultComponent {
   allParty: any[] = [];
   winingParty: any;
+  public chart: any;
+
   constructor(
     private service: VoterService
   ) {
+    Chart.register(...registerables);
     this.service.getAllParty().pipe(take(1)).subscribe((res: any) => {
       if (!!res) {
-        console.log('>>>>##>>', res);
         this.allParty = res;
         if (this.allParty?.length > 1) {
           this.getWiningPart();
         }
+        //using map generate new array-->partyname
+        const nameList = res.map((item: any) => item?.partyLeaderName);
+        
+        const voteData: any = [];
+        res.forEach((item: any) => {
+          voteData.push(
+            item?.votes
+          )
+          
+        });
+
+        this.chart = new Chart("Chart", {
+          type: 'bar',
+          data: {
+            labels: nameList, // X-axis labels
+            datasets:
+              [
+                {
+                  data: voteData, // Data for the dataset
+                  label: "",  // Label for the dataset
+                  backgroundColor: '#FF5733', // Custom color for the bars
+                  borderColor: '#FF5733', // Border color for the bars
+                  borderWidth: 1
+                }
+              ]
+          }
+        });
       }
     });
   }

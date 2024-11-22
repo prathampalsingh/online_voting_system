@@ -17,7 +17,10 @@ img {
 .header{
     background-color: rgb(221, 148, 39);
 }
-
+.chart-container {
+    height: 600px;
+    width: 600px;
+}
 .main h1 {
     /* padding-left: 550px;
     padding-top: 20px; */
@@ -48,6 +51,6 @@ text-align: center;
     font-size: 35px;
 }
 .party-name span{
-    font-size: 45px;
+    font-size: 30px;
     color: brown;
 }

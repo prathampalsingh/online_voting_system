@@ -26,6 +26,7 @@ import { EditVoterComponent } from './voter/edit-voter/edit-voter.component';
 import { DatePipe } from '@angular/common';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import {MatIconModule} from '@angular/material/icon';
+import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 
 @NgModule({
@@ -54,12 +55,14 @@ import {MatIconModule} from '@angular/material/icon';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    BaseChartDirective
   ],
   providers: [
     AdminLoginGuardService,
     VoterLoginGuardService,
-    DatePipe
+    DatePipe,
+    provideCharts(withDefaultRegisterables())
   ],
   bootstrap: [AppComponent]
 })

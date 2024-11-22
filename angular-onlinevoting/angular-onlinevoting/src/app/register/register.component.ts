@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-register',//name
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })

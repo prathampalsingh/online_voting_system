@@ -4,7 +4,9 @@
         <table border="1" class="table">
             <tr class="header">
                 <th>Party Logo</th>
-                <th>Party & Candidate</th>
+                <th>Party Name</th>
+                <th>Party Candidate</th>
+                <th>Constituency</th>
                 <th>Vote</th>
             </tr>
             <tr *ngFor="let party of allParty">
@@ -14,11 +16,24 @@
                 <td>
                     {{party?.partyLeaderName}} ({{party?.partyName}})
                 </td>
+                <td>
+                    {{party?.partyLeaderName}} 
+                 </td>
+                 <td>
+                     {{party?.constituency}}
+                 </td>
                 <td>{{party?.votes}}</td>
             </tr>
         </table>
         <div *ngIf="allParty && allParty.length > 1" class="party-name">
-            Win party:  <span>{{winingParty?.partyName}}</span>
+            Win party: <span>{{winingParty?.partyLeaderName}}-{{winingParty?.partyName}}</span>
         </div>
+    </div>
+</div>
+<div>
+    <div class="chart-container">
+      
+            <canvas id="Chart">{{ chart }}</canvas>
+      
     </div>
 </div>
