@@ -22,14 +22,10 @@ public class EntityExceptionHandler extends ResponseEntityExceptionHandler {
 			HttpHeaders headers, HttpStatusCode status, WebRequest request) {
 		List<String> errors = new ArrayList<String>();
 		for (FieldError error : ex.getBindingResult().getFieldErrors()) {
+			//defaultmsg will get error from the entity class
 			System.out.println("=====>" + error.getDefaultMessage());
 			errors.add(error.getField() + ": " + error.getDefaultMessage());
 		}
-		/*
-		 * for (ObjectError error : ex.getBindingResult().getGlobalErrors()) {
-		 * System.out.println("2222=====>"+error.getDefaultMessage());
-		 * errors.add(error.getObjectName() + ": " + error.getDefaultMessage()); }
-		 */
 		ApiError apiError = new ApiError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
 		return handleExceptionInternal(ex, apiError, headers, apiError.getStatus(), request);
 	}	

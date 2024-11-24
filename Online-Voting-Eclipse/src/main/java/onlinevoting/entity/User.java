@@ -21,7 +21,7 @@ public class User {
 	private Long userId;
 
 	@NotNull(message = "Name Can Not Be Empty")
-	@Size(min = 3, message = "person name should create atleast 3character")
+	@Size(min = 3, message = "person name should create atleast 3 character")
 	private String userName;
 
 	@Column(name = "VotingCardNumber", unique = true, length = 30)

@@ -20,6 +20,7 @@ export class AppComponent {
       filter(event => event instanceof NavigationStart)
     ).subscribe((event: any) => {
       const role = localStorage.getItem("role");
+      // will get null until user has logged in as voter or admin
       if (role !== null && role === 'voter') {
         setTimeout(() => {
           this.isLoggedIn = true;
