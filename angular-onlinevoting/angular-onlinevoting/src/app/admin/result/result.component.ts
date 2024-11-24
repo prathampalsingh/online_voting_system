@@ -34,7 +34,8 @@ export class ResultComponent {
           )
           
         });
-
+//package.json -> line 31,32 , app.module.ts -> line 29 , main.ts -> line 6 and 11 to 13 , result.ts and html
+// chart format = https://www.chartjs.org/docs/latest/charts/bar.html
         this.chart = new Chart("Chart", {
           type: 'bar',
           data: {

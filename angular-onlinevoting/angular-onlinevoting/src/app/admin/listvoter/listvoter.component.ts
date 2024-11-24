@@ -19,8 +19,11 @@ export class ListvoterComponent {
     private router: Router
   ) {
     this.getAllVoter();
+    //debouncetime will reponse in 1 second pra... p 1sec r 1sec a 1 sec
     this.searchSubject.pipe(debounceTime(1000)).subscribe((val: any) => {
       console.log(">>>>>>>>", val);
+      // searching user via username
+      //include method used will search prathampal with only pra
       this.allVoters = this.backupVoters.filter((item: any) => item?.userName.includes(val))
       console.log("%%%%%%", this.allVoters);
     })

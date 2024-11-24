@@ -139,7 +139,7 @@ export class RegisterComponent {
 console.log("@@@@",JSON.parse(err?.error));
 const errMsg=JSON.parse(err?.error)?.message;
 if(errMsg.includes("could not execute statement [Duplicate entry")){
-alert('Voter id/ Mobile Number / Email id already in used.')
+alert('Voter id already in used. Use another!!!')
 }
       }
     );

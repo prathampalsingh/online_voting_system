@@ -21,7 +21,8 @@ public class User {
 	private Long userId;
 
 	@NotNull(message = "Name Can Not Be Empty")
-	@Size(min = 3, message = "person name should create atleast 3 character")
+	@Column(name = "userName",length = 15)
+	@Size(min = 3, message = "person name should create atleast 3character")
 	private String userName;
 
 	@Column(name = "VotingCardNumber", unique = true, length = 30)
@@ -30,15 +31,16 @@ public class User {
 	private String userVotingCardNumber;
 
 	@NotNull(message = "Address Can Not Be Empty")
+	@Column(name = "userAddress",length = 50)
 	private String userAddress;
 
-	@Column(name = "MobileNumber", unique = true)
+	@Column(name = "MobileNumber",length = 15)
 	@NotNull(message = " Mobile Number Can Not Be Empty")
 	@Pattern(regexp = "^[6-9][0-9]{9}$")
 	@Size(min = 10, max = 10, message = "Mobile Number Should Contains 10 Digits")
 	private String userMobileNumber;
 
-	@Column(name = "emailid", unique = true, length = 25)
+	@Column(name = "emailid", length = 35)
 	@NotEmpty
 	@Email(message = "Email is not valid")
 	private String userEmail;
@@ -53,15 +55,17 @@ public class User {
 
 	@NotNull
 	@Size(min = 4, message = "person gender should have atleast 4 characters")
+	@Column(name = "userGender", length = 10)
 	private String userGender;
 
 	@NotNull
+	@Column(name = "userRole", length = 10)
 	private String userRole;
 
+	@Column(name = "status", length = 15)
 	private String status;
 
 	private boolean isActivateAccount;
-
 	public Long getUserId() {
 		return userId;
 	}
@@ -156,10 +160,5 @@ public class User {
 
 	public void setActivateAccount(boolean isActivateAccount) {
 		this.isActivateAccount = isActivateAccount;
-	}
-	
-	
-	
+	}	
 }
-
-	

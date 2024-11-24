@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+//Observable : can handle multple asynchronus request (http client) only two methods subscribe and unsubscribe
 import { Observable, tap } from 'rxjs';
 
 @Injectable({
@@ -42,7 +43,7 @@ export class VoterService {
   signUp(body: any): Observable<any>{
     return this.httpClient.post(`${this.loginUrl}/user/registeruser`, body, { responseType: 'text' });
   }
-
+//
   storeLoggedInUser(user: any) {
     this.loggedInUser = user;
   }
