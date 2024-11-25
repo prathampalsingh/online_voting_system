@@ -1,5 +1,5 @@
 package onlinevoting.exception;
-
+//arraylist used to reprenst dynamic list
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,10 +13,11 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-
+//global exception handler that returns  json or xml respones
+//in our project it is used for checking for duplicate entry
 @RestControllerAdvice
 public class EntityExceptionHandler extends ResponseEntityExceptionHandler {
-
+//let complier know that we are overriding the method of parent class
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatusCode status, WebRequest request) {

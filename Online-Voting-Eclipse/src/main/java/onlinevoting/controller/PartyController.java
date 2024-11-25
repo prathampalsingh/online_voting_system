@@ -24,6 +24,7 @@ import onlinevoting.service.PartyService;
 @RestController
 @RequestMapping("/party")
 @CrossOrigin(origins = "http://localhost:4200")
+//@transactional is used to mark method or class as transactional which makes use of the attributes rollbackFor
 @Transactional
 public class PartyController {
 	@Autowired

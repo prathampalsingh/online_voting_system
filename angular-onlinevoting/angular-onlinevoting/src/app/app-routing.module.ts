@@ -24,8 +24,10 @@ const routes: Routes = [
   { path: 'contact', component: ContactusComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'aboutus', component: AboutusComponent },
+  //voter route
   { path: 'voterhome', component: VoterhomeComponent, canActivate: [VoterLoginGuardService] },
   { path: 'voteadd', component: AddvoteComponent, canActivate: [VoterLoginGuardService] },
+  //admin route
   { path: 'adminaddparty', component: AddpartyComponent, canActivate: [AdminLoginGuardService] },
   { path: 'adminlistparty', component: ListpartyComponent, canActivate: [AdminLoginGuardService] },
   { path: 'adminhome', component: AdminhomeComponent, canActivate: [AdminLoginGuardService] },

@@ -12,11 +12,13 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
-
+// it tells jpa that this class represnts db table .. field mapping is used
 @Entity
 
 public class User {
+	//used to identify a class member with unique identifier for a database entity
 	@Id
+	//@GV is used along side @id to automaticlly assgin unique id to an entity
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long userId;
 
@@ -65,6 +67,7 @@ public class User {
 	@Column(name = "status", length = 15)
 	private String status;
 
+	//getter setter
 	private boolean isActivateAccount;
 	public Long getUserId() {
 		return userId;

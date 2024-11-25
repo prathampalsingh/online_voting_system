@@ -20,15 +20,18 @@
 	<dependencies>
 			<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<!-- allows seamless interaction between java objects n relational db -->
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>                 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<!--used to build web apps and include restfull service-->
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<!--provides automatic restart functionality and allow us to see changes quickly-->
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>

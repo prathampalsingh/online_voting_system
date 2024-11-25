@@ -5,7 +5,8 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import onlinevoting.entity.Party;
 import onlinevoting.entity.User;
-
+// curd (insert update delete) , jpa also does (sorting searching and paging (redirecting to different url) )
+// jpa uses <entity, datatype>
 public interface UserRepository extends JpaRepository<User, Long> {
 	
 	User  findByUserEmailAndUserPassword(String userEmail, String userPassword);

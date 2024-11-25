@@ -1,5 +1,8 @@
+//http client is used to make http request to the backend service
 import { HttpClient } from '@angular/common/http';
+//allow to inject service into a component, giving component access to the service
 import { Injectable } from '@angular/core';
+//router = guides to different part of our application without full page reloads
 import { Router } from '@angular/router';
 //Observable : can handle multple asynchronus request (http client) only two methods subscribe and unsubscribe
 import { Observable, tap } from 'rxjs';

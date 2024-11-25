@@ -2,13 +2,15 @@ import { Component, numberAttribute } from '@angular/core';
 import { VoterService } from '../voter.service';
 import { take } from 'rxjs';
 import { Router } from '@angular/router';
+//it allows us to format date and time according to our desired format
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-register',//name
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-register',//define html tag/name for the component 
+  templateUrl: './register.component.html',//path to the html template file
+  styleUrls: ['./register.component.css']//path to the css template file
 })
+//export class = we can easily export this class anywhere in the application to reuse existing functionality
 export class RegisterComponent {
   errorMessage: string = '';
   userMobileNumber: string = '';
@@ -26,7 +28,9 @@ export class RegisterComponent {
     private service: VoterService,
     private datePipe: DatePipe
   ) {
+    //save today's date
     const todayDate = new Date();
+    //subtract today's day with 18 years, making sure user is 18+ and in year-month-day format
     this.maxDate = this.datePipe.transform(todayDate.setFullYear(todayDate?.getFullYear() - 18), "yyyy-MM-dd");
      }
     registerUser(): any {
@@ -136,7 +140,7 @@ export class RegisterComponent {
       },
       (err:any)=>{
 //error getting in string json format so we must need to parse JSON
-console.log("@@@@",JSON.parse(err?.error));
+console.log("DUPLICATE ENTRY",JSON.parse(err?.error));
 const errMsg=JSON.parse(err?.error)?.message;
 if(errMsg.includes("could not execute statement [Duplicate entry")){
 alert('Voter id already in used. Use another!!!')

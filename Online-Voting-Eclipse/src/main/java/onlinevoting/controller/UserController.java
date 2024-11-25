@@ -1,5 +1,5 @@
 package onlinevoting.controller;
-
+//hashmap is a datastructure that stores keyvalue-pairs
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
@@ -24,11 +24,15 @@ import onlinevoting.repository.PartyRepository;
 import onlinevoting.repository.UserRepository;
 import onlinevoting.service.PartyService;
 import onlinevoting.service.UserService;
-
+//RestController = powerfull tool that transforms javaclasstes into restfull web services
 @RestController
+//requestMapping = is used to map request to the controller methodes post,get, delete
 @RequestMapping("/user")
+//it allows us to specify which origin(domain) is allowed to access our api
 @CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
+	// automatically injects dependencies into our beans (it simplifies dependenices management and promotes loose coupling(reduces dependencies between components))
+	//beans= obj that is created, constucted and manage by spring 
 	@Autowired
 	private UserService userService;
 
@@ -40,25 +44,24 @@ public class UserController {
 
 	@Autowired
 	private UserRepository userRepository;
-
+	//get data to display from db
 	@GetMapping("/alluser")
 	public List<User> getUser() {
 		return userService.displayUser();
 	}
-
+	//update or insert data into db
 	@PostMapping("/registeruser")
 	public ResponseEntity<String> registerUser(@Valid @RequestBody User user) {
 		userService.registerUser(user);
 		return ResponseEntity.ok("User Registered Successfully");
 	}
-	
+	//delete data from db
 	@DeleteMapping("/deleteuser/{id}")
 	public ResponseEntity<Boolean> deleteUser(@PathVariable("id") long userId) {
 		userService.deleteByUserId(userId);
 		boolean flag = true;
 		return new ResponseEntity<Boolean>(flag, HttpStatus.OK);
 	}
-
 	@PostMapping("/loginByCardNumber")
 	public ResponseEntity<User> loginByCardNumber(@RequestBody User user) {
 		User u = userService.loginUserByVotingCardNumber(user.getUserVotingCardNumber(), user.getUserPassword());

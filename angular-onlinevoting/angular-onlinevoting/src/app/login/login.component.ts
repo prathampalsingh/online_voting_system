@@ -7,6 +7,7 @@ import { take } from 'rxjs';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+//export class = we can easily export this class anywhere in the application to reuse existing functionality
 export class LoginComponent {
 
   loginType: string = 'voter';

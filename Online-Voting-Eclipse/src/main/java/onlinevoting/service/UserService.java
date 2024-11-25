@@ -15,7 +15,8 @@ import onlinevoting.entity.User;
 import onlinevoting.exception.ResourceNotFoundException;
 import onlinevoting.repository.PartyRepository;
 import onlinevoting.repository.UserRepository;
-
+//this automatically creates beans for this class and manages its life cycle
+// for each time button clicked a life cycle is completed eg register user-> backend -> database
 @Service
 public class UserService {
     @Autowired
@@ -66,7 +67,7 @@ public class UserService {
     public User loginUserByEmail(String userEmail, String userPassword) {
       return userRepository.findByUserEmailAndUserPassword(userEmail, userPassword);
   }
-    
+    //Active user
     public ResponseEntity<String> activateUser2(Long userId) {
     	User u = userRepository.findById(userId).get();
 		if (u != null) {

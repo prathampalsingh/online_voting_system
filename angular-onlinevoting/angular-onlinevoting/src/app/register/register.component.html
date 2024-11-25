@@ -1,11 +1,13 @@
 <section class="sign_up">
     <div class="container">
         <h1>Register</h1>
+        <!--ngif = it is a structura directive used for DOM manupulation. works as an if statement-->
         <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="erroediv">
             {{errorMessage}}
         </div>
         <p id="create">Create your account. It's free and only takes a minute</p>
         <div class="details">
+        <!--ngMOdel = a directive  that enables two way data binding -->
             <input id="i1" type="text" placeholder="User Name" [(ngModel)]="userName">
             <input id="i2" type="text" placeholder="Voting Number" [(ngModel)]="userVotingCardNumber">
             <input id="i3" type="address" placeholder="Address" [(ngModel)]="userAddress">
