@@ -35,6 +35,7 @@ public class UserService {
     	} else {
     		user.setActivateAccount(false);
     	}
+    	//User is a model and user is object of that model
         return userRepository.save(user);
     }
     

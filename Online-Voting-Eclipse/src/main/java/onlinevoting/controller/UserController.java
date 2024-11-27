@@ -51,12 +51,14 @@ public class UserController {
 	}
 	//update or insert data into db
 	@PostMapping("/registeruser")
+	//@valid is used to validate user data 
 	public ResponseEntity<String> registerUser(@Valid @RequestBody User user) {
 		userService.registerUser(user);
 		return ResponseEntity.ok("User Registered Successfully");
 	}
 	//delete data from db
 	@DeleteMapping("/deleteuser/{id}")
+	//pathvariable is used to make sure the specific id is deleted , if not used then id (60) and id(62) is not namet
 	public ResponseEntity<Boolean> deleteUser(@PathVariable("id") long userId) {
 		userService.deleteByUserId(userId);
 		boolean flag = true;
