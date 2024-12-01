@@ -24,6 +24,7 @@ class OnlineVotingSystemApplicationTests {
 	private final String email="altamashshkh200@gmail.com";
 	
 //	@Test
+	
 //	void testRegisterUser() {
 //		
 //		User newUser=new User();
@@ -32,7 +33,7 @@ class OnlineVotingSystemApplicationTests {
 //		newUser.setUserGender("Female");
 //		newUser.setUserRole("voter");
 //		newUser.setUserAddress("Mumbai");
-//		newUser.setUserVotingCardNumber("3456345645");
+//		newUser.setUserVotingCardNumber("3456345000");
 //		newUser.setUserPassword("Priya@123");
 //		newUser.setUserMobileNumber("8989818989");
 //		//LocalDate.of(2002,12 ,3);
@@ -60,12 +61,4 @@ class OnlineVotingSystemApplicationTests {
 		System.out.println("******"+user.getUserEmail());
 		assertNotNull(userService.getUserByUserName(user.getUserName()));
 	}
-	
-	
-
-	
-
-	
-
-
 }

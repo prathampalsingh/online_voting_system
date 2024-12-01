@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 //router = guides to different part of our application without full page reloads
 import { Router } from '@angular/router';
+
 //Observable : can handle multple asynchronus request (http client) only two methods subscribe and unsubscribe
 import { Observable, tap } from 'rxjs';
 
@@ -42,7 +43,8 @@ export class VoterService {
       })
     );
   }
-
+// observable can return any type of value
+//eg youtube channel subcribe to get updates
   signUp(body: any): Observable<any>{
     return this.httpClient.post(`${this.loginUrl}/user/registeruser`, body, { responseType: 'text' });
   }

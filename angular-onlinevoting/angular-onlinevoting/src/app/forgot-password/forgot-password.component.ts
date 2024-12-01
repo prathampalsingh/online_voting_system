@@ -19,19 +19,34 @@ export class ForgotPasswordComponent {
 
   }
 
+  // getUserName(): void {
+  //   this.service.getUserByEmail(this.userName).pipe(take(1)).subscribe((res) => {
+  //     console.log('#####', res);
+  //     if (res && res?.userId) {
+  //       this.userId = res?.userId;
+  //       this.isShowPassword = true; 
+  //     }
+  //   }, err => {
+  //     if (err && err?.error?.message.includes('No value present')) {
+  //       alert('Email is not present. Please write your email address');
+  //     } else {
+  //       alert('Something went wrong.');
+  //     }
+  //   });
+  // }
   getUserName(): void {
     this.service.getUserByEmail(this.userName).pipe(take(1)).subscribe((res) => {
-      console.log('#####', res);
+      console.log('###res ##', res);
       if (res && res?.userId) {
         this.userId = res?.userId;
         this.isShowPassword = true; 
       }
-    }, err => {
-      if (err && err?.error?.message.includes('No value present')) {
-        alert('Email is not present. Please write your email address');
-      } else {
-        alert('Something went wrong.');
+      else if(res ===null)
+        {
+          alert('Email is not present. Please write valid email address');
       }
+    }, err => {
+      alert('Something went wrong.');
     });
   }
 

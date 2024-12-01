@@ -3,6 +3,8 @@ import { VoterService } from '../voter.service';
 import { take } from 'rxjs';
 import { Router } from '@angular/router';
 //it allows us to format date and time according to our desired format
+//two types of pipe custom and built in 
+//datepipe is builtin 
 import { DatePipe } from '@angular/common';
 
 @Component({
@@ -127,9 +129,13 @@ export class RegisterComponent {
         // userRole: 'admin'
         userRole: 'voter'
       };
-
+      //service is used to call the voterservices
       console.log('>>>>>', body);
+      //.pipe format of dob
+      //take 1 
+      //return type is observable
       this.service.signUp(body).pipe(take(1)).subscribe((res: any) => {
+        //local  temporary variable res type any 
         console.log('>>>>>>>>>>>>>>>>>>res', res);
         if (!!res && res === 'User Registered Successfully') {
           alert('You successfully register');
