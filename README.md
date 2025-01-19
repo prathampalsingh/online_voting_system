@@ -2,24 +2,6 @@
 
 **An Online Voting System designed to revolutionize the way citizens participate in elections.** This project eliminates the hassles of paper-based voting by providing a secure, automated, and streamlined voting platform. The system is built using cutting-edge technologies like HTML, CSS, TypeScript, Angular, Java (Spring Boot), and MySQL.
 
-**🏠 Home Page**
-
-The landing page introduces the importance of voting with a focus on the system's features and security.
-
-**🎛️ Admin Dashboard**
-
-The admin has access to a dashboard displaying the total number of users, parties, and voters. Additionally, the admin can manage voters and parties.
-
-**Features:**
-
-* View and manage voter details.
-* Add new political parties with their logos and constituencies.
-* Monitor voting activity in real-time.
-
-**📋 List of Voters**
-
-The admin can view the list of registered voters, along with their personal details, account status, and actions like Update or Delete voter accounts.
-
 **✨ Key Features**
 
 * **Secure Authentication:** Ensures only verified users can cast votes.
@@ -88,6 +70,24 @@ The admin can view the list of registered voters, along with their personal deta
       ```
 
    * **Access the application:** Open your web browser and navigate to `http://localhost:4200/` (or the port specified in the terminal output).
+
+**🏠 Home Page**
+
+The landing page introduces the importance of voting with a focus on the system's features and security.
+
+**🎛️ Admin Dashboard**
+
+The admin has access to a dashboard displaying the total number of users, parties, and voters. Additionally, the admin can manage voters and parties.
+
+**Features:**
+
+* View and manage voter details.
+* Add new political parties with their logos and constituencies.
+* Monitor voting activity in real-time.
+
+**📋 List of Voters**
+
+The admin can view the list of registered voters, along with their personal details, account status, and actions like Update or Delete voter accounts.
 
 **🖼️ Screenshots**
 
