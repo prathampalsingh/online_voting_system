@@ -82,8 +82,21 @@ The admin can view the list of registered voters, along with their personal deta
 **🖼️ Screenshots**
 
 * [Home Page Screenshot]
+![home](https://github.com/user-attachments/assets/aed1fa6d-fecb-44f0-9cff-674a989a730a)
+
 * [Admin Dashboard Screenshot]
+![dashboard](https://github.com/user-attachments/assets/bc5b6999-328b-4d88-853c-8bada26c9ea6)
+
 * [Voter List Screenshot]
+![listvoters](https://github.com/user-attachments/assets/45937d23-6d7c-48ca-82ea-8392fa6ed227)
+* [Add new party Screenshot]
+![addparty](https://github.com/user-attachments/assets/4b16e953-5f71-4f53-a18d-9643f0f475a3)
+* [Register New User Screenshot]
+![register](https://github.com/user-attachments/assets/33e6b876-049d-4357-8691-339df5fb44c6)
+* [Users(not voted) Screenshot]
+![notvoted](https://github.com/user-attachments/assets/42ee4c4c-bfaf-49c0-a73d-79b194924d35)
+* [Users(voted) Screenshot]
+![voted](https://github.com/user-attachments/assets/3eca57df-d00c-4708-aa3d-8ca06b0fd6d2)
 
 **📚 Learnings**
 
@@ -94,34 +107,8 @@ This project demonstrates:
 * Database design and integration with MySQL.
 * Implementing key software engineering principles.
 
-**Note:**
-
-* Replace the placeholders `[Home Page Screenshot]`, `[Admin Dashboard Screenshot]`, and `[Voter List Screenshot]` with actual links to the screenshots. 
-* Consider adding a section for contributions and acknowledgments if applicable.
-* Tailor the README to your specific project needs and audience.
-
-This enhanced README provides a comprehensive and detailed guide for anyone who wants to understand, run, and potentially contribute to your Online Voting System project.
 
 Home Page
-![home](https://github.com/user-attachments/assets/aed1fa6d-fecb-44f0-9cff-674a989a730a)
-
-Admin home/ dashboard
-![dashboard](https://github.com/user-attachments/assets/bc5b6999-328b-4d88-853c-8bada26c9ea6)
-
-List of  Voter
-![listvoters](https://github.com/user-attachments/assets/45937d23-6d7c-48ca-82ea-8392fa6ed227)
-
-Add new party(admin)
-![addparty](https://github.com/user-attachments/assets/4b16e953-5f71-4f53-a18d-9643f0f475a3)
-
-Registration of new User
-![register](https://github.com/user-attachments/assets/33e6b876-049d-4357-8691-339df5fb44c6)
-
-If user not voted
-![notvoted](https://github.com/user-attachments/assets/42ee4c4c-bfaf-49c0-a73d-79b194924d35)
-
-If user voted
-![voted](https://github.com/user-attachments/assets/3eca57df-d00c-4708-aa3d-8ca06b0fd6d2)
 
 Steps to run:-
 1.install nodejs (https://nodejs.org/en/download/prebuilt-installer)
