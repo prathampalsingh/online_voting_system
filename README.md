@@ -71,7 +71,7 @@
 
    * **Access the application:** Open your web browser and navigate to `http://localhost:4200/` (or the port specified in the terminal output).
 
-## **Project Description*
+## **Project Description**
 
 **🏠 Home Page**
 
