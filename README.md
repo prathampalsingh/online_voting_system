@@ -17,7 +17,7 @@
 * **Database:** MySQL
 * **Tools:** Eclipse IDE, VS Code, Node.js
 
-**🚀 How to Run the Project**
+## **🚀 How to Run the Project**
 
 **Prerequisites:**
 
