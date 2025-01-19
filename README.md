@@ -57,7 +57,14 @@ The admin can view the list of registered voters, along with their personal deta
    * **Import the Spring Boot Project into Eclipse:**
       1. In Eclipse, go to **File > Import > Existing Maven Projects**.
       2. Browse to the directory where your Spring Boot project is located and select the `pom.xml` file.
-      3. Click **Finish**.
+         ```bash
+         ```bash
+         spring.datasource.url=jdbc:mysql://localhost:3306/db521
+         spring.datasource.username=your-username
+         spring.datasource.password=your-password
+         ```
+      3. Update **your-name** with your database username and password.
+         
 
    * **Run the Spring Boot Application:**
       1. Right-click on the `Application` class in the `com.spring` package.
@@ -66,7 +73,10 @@ The admin can view the list of registered voters, along with their personal deta
 **2. Frontend (Angular):**
 
    * **Open the Angular project in VS Code:** Open the terminal within VS Code and navigate to the root directory of your Angular project.
-
+   *  **Install angular:**
+      ```bash
+      npm install -g @angular/cli
+      ```
    * **Install dependencies:**
       ```bash
       npm install
@@ -107,38 +117,4 @@ This project demonstrates:
 * Database design and integration with MySQL.
 * Implementing key software engineering principles.
 
-
-Home Page
-
-Steps to run:-
-1.install nodejs (https://nodejs.org/en/download/prebuilt-installer)
-
-2.on vscode run open new terminal and type
-
-npm install -g @angular/cli
-
-npm install
-
-3.on eclipse ide
-
-4.help > eclipse marketplace
-
-5.install spring tool v4
-
-6.install devtools
-
-7.on mysql terminal crearte a database 
-
-**create database db521;**
-
-8.com.spring > application 
-
-9.run as spring
-
-10.on vscode
-
-npm start
-
-on your browser
-
-copy and paste the localhost provided on the terminal
+***Hand-coded with ❤️ using Java and Spring Boot***
