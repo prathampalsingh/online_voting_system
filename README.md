@@ -118,4 +118,4 @@ This project demonstrates:
 * Database design and integration with MySQL.
 * Implementing key software engineering principles.
 
-***Hand-coded with ❤️ using Java and Spring Boot***
+***Hand-coded with ❤️ using Java, Spring Boot, Angular, Typescript, MySql***
