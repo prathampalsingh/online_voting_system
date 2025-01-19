@@ -40,7 +40,6 @@
       1. In Eclipse, go to **File > Import > Existing Maven Projects**.
       2. Browse to the directory where your Spring Boot project is located and select the `pom.xml` file.
          ```bash
-         ```bash
          spring.datasource.url=jdbc:mysql://localhost:3306/db521
          spring.datasource.username=your-username
          spring.datasource.password=your-password
