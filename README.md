@@ -71,6 +71,8 @@
 
    * **Access the application:** Open your web browser and navigate to `http://localhost:4200/` (or the port specified in the terminal output).
 
+## **Project Description*
+
 **🏠 Home Page**
 
 The landing page introduces the importance of voting with a focus on the system's features and security.
